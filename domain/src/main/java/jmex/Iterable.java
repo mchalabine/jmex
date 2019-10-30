@@ -121,7 +121,7 @@ public abstract class Iterable<T> implements java.lang.Iterable<T>, Serializable
         return List.copyOf(items);
     }
 
-    public Stream<T> asStream() {
+    public Stream<T> stream() {
         return items.stream();
     }
 

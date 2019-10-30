@@ -3,16 +3,24 @@ package jmex;
 import org.junit.jupiter.api.Test;
 
 import java.lang.invoke.MethodHandles;
-import java.util.Objects;
 
 import static java.util.Objects.requireNonNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 final class IterableUnitTest {
 
     @Test
-    void testValueOfVarargsCreatesExpected() {
+    void testValueOfVarargsCreates() {
         Strings strings = Strings.valueOf("1", "2", "3");
         requireNonNull(strings);
+    }
+
+    @Test
+    void testValueOfVarargsCreatesExpected() {
+        Strings strings = Strings.valueOf("1", "2", "3");
+        assertEquals( strings.stream()
+                .filter(i -> !strings.contains(i))
+                .count(), 0);
     }
 
     private final static class Strings extends Iterable<String> {
