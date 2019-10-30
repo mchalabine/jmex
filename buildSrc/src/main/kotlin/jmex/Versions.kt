@@ -5,7 +5,7 @@ import org.gradle.api.JavaVersion
 object Versions {
 
     object Java {
-        val TARGET_JVM = JavaVersion.VERSION_11.toString()
+        val TARGET_JVM = JavaVersion.VERSION_12.toString()
     }
 
     object Gradle {
