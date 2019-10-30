@@ -23,8 +23,6 @@ object Dependencies {
     }
 
     object Spring {
-        const val DEPENDENCY_MANAGEMENT =
-                "io.spring.gradle:dependency-management-plugin:${Versions.Spring.DEPENDENCY_MANAGEMENT}"
     }
 }
 

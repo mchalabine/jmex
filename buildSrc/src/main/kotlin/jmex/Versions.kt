@@ -25,7 +25,6 @@ object Versions {
     }
 
     object Spring {
-        const val DEPENDENCY_MANAGEMENT = "1.0.7.RELEASE"
     }
 
 }
