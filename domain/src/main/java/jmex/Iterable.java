@@ -57,8 +57,8 @@ public abstract class Iterable<T> implements java.lang.Iterable<T>, Serializable
         }
     }
 
-    private static <I> Supplier<I> tryCreateInstanceFactory(Class<I> clazz,
-                                                            MethodHandles.Lookup lookup) throws Throwable {
+    private static <I> Supplier<I> tryCreateInstanceFactory(
+            Class<I> clazz, MethodHandles.Lookup lookup) throws Throwable {
         MethodType methodType = MethodType.methodType(Object.class);
         MethodType invokedType = MethodType.methodType(Supplier.class);
         MethodHandle constructor = lookup.findConstructor(clazz, MethodType.methodType(void.class));
