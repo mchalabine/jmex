@@ -1,4 +1,4 @@
-name: jMeX Gradle Flow
+name: jMeX Gradle Build
 
 on:
   push:
