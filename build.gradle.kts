@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id(jmex.PluginIds.JetBrains.KOTLIN).version(jmex.Versions.Plugin.KOTLIN)
+    id(jmex.PluginIds.Maven.MAVEN_PUBLISH)
 }
 
 val kotlinVersion = getKotlinPluginVersion()

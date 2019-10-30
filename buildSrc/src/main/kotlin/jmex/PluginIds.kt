@@ -11,4 +11,8 @@ object PluginIds {
         const val GRADLE = "org.gradle.java-gradle-plugin"
     }
 
+    object Maven {
+        const val MAVEN_PUBLISH = "maven-publish"
+    }
+
 }
