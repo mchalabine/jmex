@@ -17,7 +17,7 @@ import static java.util.Objects.requireNonNull;
  * Base representation for everything iterable.
  *
  * @author Michael Chalabine
- * @since 1.0.0
+ * @since 0.1.0
  */
 public abstract class Iterable<T> implements java.lang.Iterable<T>, Serializable {
 
