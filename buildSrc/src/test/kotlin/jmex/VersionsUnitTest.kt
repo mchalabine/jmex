@@ -1,4 +1,4 @@
-package jmex.gmex
+package jmex
 
 import org.junit.jupiter.api.Test
 
@@ -9,6 +9,5 @@ internal class VersionsUnitTest {
 
     @Test
     fun testInstance() {
-        println()
     }
 }
