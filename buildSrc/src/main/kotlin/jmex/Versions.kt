@@ -9,7 +9,7 @@ object Versions {
     }
 
     object Gradle {
-        const val WRAPPER = "5.5.1"
+        const val WRAPPER = "5.6.3"
     }
 
     object Plugin {
